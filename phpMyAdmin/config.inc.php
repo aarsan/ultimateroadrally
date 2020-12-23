@@ -33,6 +33,10 @@ $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
+/** Needed for App Service because permissions are set incorrectly */
+ $cfg['CheckConfigurationPermissions']=false;
+ 
+
 /**
  * phpMyAdmin configuration storage settings.
  */
